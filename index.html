@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-4 offset-md-4">
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="question-counter m-0">Вопрос №<span id="orderNumberField">1</span></p>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h3 class="card-title m-0"><span id="answerField">Я угадаю твоё число&#129488</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group">
+                        <button class="btn btn-info" id="btnLess">&#129047;<br>Меньше</button>
+                        <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+                        <button class="btn btn-info" id="btnOver">Больше<br>&#129045;</button>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" id="btnRetry">Начать игру</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop_up">
+    <div class="pop_up_container">
+        <div class="pop_up_body">
+            <p>Поиграем в игру?</p>
+            <form action="">
+                <p>Введите минимальное значение до -999</p>
+                <input type="text" id="inputMinValue">
+                <p>Введите максимальное значение до 999</p>
+                <input type="text" id="inputMaxValue">
+                <button id="submit-button" type="button">Поехали!</button>
+            </form>
+            <div class="pop_up_close">&#10006</div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
